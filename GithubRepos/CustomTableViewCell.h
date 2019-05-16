@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Repo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomTableViewCell : UITableViewCell
 
 @property (nonatomic,strong) UILabel* label;
+
+@property (weak,nonatomic)Repo* repo;
 
 @end
 

@@ -53,7 +53,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CustomTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"customCell" forIndexPath:indexPath];
     
-    cell.label.text = self.repoObjects[indexPath.row].name;
+    Repo* repoObject = self.repoObjects[indexPath.row];
+    cell.repo = repoObject;
     
     return cell;
 }
@@ -89,8 +90,7 @@
         // If we reach this point, we have successfully retrieved the JSON from the API
         for (NSDictionary *repo in repos) { // 4
             
-            NSString *repoName = repo[@"name"];
-            Repo* repoObject = [[Repo alloc]initWithName:repoName];
+            Repo* repoObject = [Repo parseJSON:repo];
             [self.repoObjects addObject:repoObject];
         }
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{

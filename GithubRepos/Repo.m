@@ -18,5 +18,9 @@
     return self;
 }
 
++(instancetype)parseJSON:(NSDictionary*)json{
+    return [[Repo alloc]initWithName:json[@"name"]];
+}
+
 
 @end

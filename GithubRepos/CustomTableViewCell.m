@@ -40,4 +40,12 @@
     }
       return self;
 }
+
+- (void)setRepo:(Repo *)repo{
+    _repo = repo;
+    
+    self.label.text = repo.name;
+}
+
+
 @end
