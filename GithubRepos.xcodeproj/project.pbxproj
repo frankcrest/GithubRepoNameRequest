@@ -13,6 +13,8 @@
 		E90EA931228DBDCB00CE51AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90EA930228DBDCB00CE51AA /* Assets.xcassets */; };
 		E90EA934228DBDCB00CE51AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90EA932228DBDCB00CE51AA /* LaunchScreen.storyboard */; };
 		E90EA937228DBDCB00CE51AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E90EA936228DBDCB00CE51AA /* main.m */; };
+		E90EA93F228DBF5900CE51AA /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E90EA93E228DBF5900CE51AA /* CustomTableViewCell.m */; };
+		E9A0E210228DC73200BA4AD8 /* Repo.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0E20F228DC73200BA4AD8 /* Repo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E90EA933228DBDCB00CE51AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90EA935228DBDCB00CE51AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90EA936228DBDCB00CE51AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E90EA93D228DBF5900CE51AA /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		E90EA93E228DBF5900CE51AA /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		E9A0E20E228DC73200BA4AD8 /* Repo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repo.h; sourceTree = "<group>"; };
+		E9A0E20F228DC73200BA4AD8 /* Repo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Repo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				E90EA928228DBDC900CE51AA /* AppDelegate.m */,
 				E90EA92A228DBDC900CE51AA /* ViewController.h */,
 				E90EA92B228DBDC900CE51AA /* ViewController.m */,
+				E90EA93D228DBF5900CE51AA /* CustomTableViewCell.h */,
+				E90EA93E228DBF5900CE51AA /* CustomTableViewCell.m */,
+				E9A0E20E228DC73200BA4AD8 /* Repo.h */,
+				E9A0E20F228DC73200BA4AD8 /* Repo.m */,
 				E90EA92D228DBDC900CE51AA /* Main.storyboard */,
 				E90EA930228DBDCB00CE51AA /* Assets.xcassets */,
 				E90EA932228DBDCB00CE51AA /* LaunchScreen.storyboard */,
@@ -141,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A0E210228DC73200BA4AD8 /* Repo.m in Sources */,
 				E90EA92C228DBDC900CE51AA /* ViewController.m in Sources */,
 				E90EA937228DBDCB00CE51AA /* main.m in Sources */,
+				E90EA93F228DBF5900CE51AA /* CustomTableViewCell.m in Sources */,
 				E90EA929228DBDC900CE51AA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
